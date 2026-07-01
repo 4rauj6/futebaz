@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-font: 'Dosis';
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-container h1 {
+    font-family: var(--title-font);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.team-container {
+    position: relative;
+}
+
+.create-team-modal {
+    display: none;
+}
+
+.create-team-modal.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    width: 90%;
+    height: 60vh;
+    margin-top: 55vh;
+    border-radius: 20px;
+    color: white;
+}
+
+.team-creator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
